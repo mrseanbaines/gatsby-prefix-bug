@@ -1,4 +1,4 @@
-import { withPrefix } from "gatsby"
+import { withPrefix, withAssetPrefix } from "gatsby"
 
 /**
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
@@ -10,4 +10,5 @@ import { withPrefix } from "gatsby"
 export const onRenderBody = ({ pathPrefix }) => {
   console.log("pathPrefix:", pathPrefix + "/")
   console.log("withPrefix:", withPrefix("/"))
+  console.log("withAssetPrefix:", withAssetPrefix("/"))
 }
